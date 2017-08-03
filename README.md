@@ -3,5 +3,5 @@ TEAPARTY
 
 Exercises in CS
 ```
-$ node start
+$ npm start
 ```
