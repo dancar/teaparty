@@ -3,10 +3,12 @@ import { Route } from 'react-router'
 import { Link } from 'react-router-dom'
 
 import BinaryGap from './components/BinaryGap'
+import CyclicRotation from './components/CyclicRotation'
 import './App.css'
 
 const COMPONENTS = {
-  '/BinaryGap': [BinaryGap, 'Binary Gap']
+  '/BinaryGap': [BinaryGap, 'Binary Gap'],
+  '/CyclicRotation': [CyclicRotation, 'Cyclic Rotation']
 }
 
 class App extends Component {
@@ -19,9 +21,9 @@ class App extends Component {
           ))}
         </div>
 
-      { Object.keys(COMPONENTS).map(key => (
-        <Route path={key} component={COMPONENTS[key][0]} exact />
-      ))}
+        { Object.keys(COMPONENTS).map(key => (
+          <Route key={key} path={key} component={COMPONENTS[key][0]} exact />
+        ))}
       </div>
     )
   }

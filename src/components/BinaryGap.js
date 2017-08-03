@@ -51,7 +51,7 @@ export default class BinaryGap extends React.Component {
       <div style={{textAlign: 'center'}}>
         <h1>Binary Gap</h1>
         <div style={{ marginBottom: 10 }}>
-        Insert random seed: &nbsp;
+        Max Number: &nbsp;
         <input
           type='number'
           min={0}
