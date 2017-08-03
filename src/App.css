@@ -1,0 +1,32 @@
+body {
+  background: black;
+  padding: 20px;
+}
+.App {
+  background: white;
+  padding: 30px;
+  border: 10px solid brown;
+}
+table {
+  border-spacing: 5px;
+  margin: auto;
+}
+td {
+  text-align: center;
+  border: 1px solid black;
+  padding: 3px;
+  background: black;
+  font-family: monospace;
+  color: white;
+}
+
+.nav {
+  display: block;
+  border-bottom: 1px solid brown;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  color: brown;
+}
