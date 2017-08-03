@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import { Route } from 'react-router'
 import { Link } from 'react-router-dom'
 
-import ZeroGaps from './components/ZeroGaps'
+import BinaryGap from './components/BinaryGap'
 import './App.css'
 
 const COMPONENTS = {
-  '/ZeroGaps': [ZeroGaps, 'ZeroGaps']
+  '/BinaryGap': [BinaryGap, 'Binary Gap']
 }
+
 class App extends Component {
   render () {
     return (

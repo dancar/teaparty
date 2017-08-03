@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class ZeroGaps extends React.Component {
+export default class BinaryGap extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -8,7 +8,7 @@ export default class ZeroGaps extends React.Component {
     }
   }
 
-  findMaxZeroGapByRecursion (N) {
+  findMaxBinaryGapByRecursion (N) {
     function solveRec (maxSoFar, zerosSoFar, oneFound, number) {
       if (number <= 1) {
         return maxSoFar
@@ -32,7 +32,7 @@ export default class ZeroGaps extends React.Component {
     return solveRec(0, 0, false, N)
   }
 
-  findMaxZeroGapByRegexp (N) {
+  findMaxBinaryGapByRegexp (N) {
     return N
       .toString(2) // Convert to binary string
       .replace(/0+$/, '') // Remove trailing zeros
@@ -49,7 +49,7 @@ export default class ZeroGaps extends React.Component {
   render () {
     return (
       <div style={{textAlign: 'center'}}>
-        <h1>Zero Gaps</h1>
+        <h1>Binary Gap</h1>
         <div style={{ marginBottom: 10 }}>
         Insert random seed: &nbsp;
         <input
@@ -94,11 +94,11 @@ export default class ZeroGaps extends React.Component {
                   </td>
 
                   <td>
-                    { this.findMaxZeroGapByRegexp(i) }
+                    { this.findMaxBinaryGapByRegexp(i) }
                   </td>
 
                   <td>
-                    { this.findMaxZeroGapByRecursion(i) }
+                    { this.findMaxBinaryGapByRecursion(i) }
                   </td>
                 </tr>
               )
